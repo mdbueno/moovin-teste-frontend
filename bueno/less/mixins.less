@@ -1,0 +1,133 @@
+@import './variables.less';
+
+.show{
+    display:block;
+}
+.hide{
+    display: none;
+}
+
+.bn-interaction-disabled{    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    touch-action: none;
+    pointer-events: none !important;
+}
+
+.bn-shadow{
+    box-shadow: 0 4px 12px rgba(0,0,0,.7);
+}
+.bn-shadow-inset{
+    box-shadow: inset 0 0 6px rgba(80,80,150,.3);
+}
+.ellipsis{
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: clip !important;
+    text-overflow: ellipsis !important;
+    text-overflow: "…" !important;
+}
+
+/* 
+    Flutuação
+ !important
+*/
+*.bn-pull-right{
+    float: right !important;
+}
+*.bn-pull-left{
+    float: left !important;
+}
+*[class*=bn-pull-right-]{
+    float: none !important;
+}
+*[class*=bn-pull-left-]{
+    float: none !important;
+}
+
+/*
+Controle de visibilidade de elementos
+visible/hidden
+*/ 
+*[class*=bn-hidden-]{
+    display: initial !important;
+}
+*[class*=bn-visible-]{
+    display: none !important;
+}
+
+@media (min-width: 1px) and (max-width: @breakpoint-xs-max) {
+    .bn-hidden-xs{display: none !important;}
+    .bn-visible-xs{display: initial !important;}
+    .bn-pull-right-xs{
+        float: right !important;
+    }
+    .bn-pull-left-xs{
+        float: left !important;
+    }
+} 
+@media (min-width: @breakpoint-sm) and (max-width: (@breakpoint-md - 1px)){
+    .bn-hidden-sm{display: none !important;}
+    .bn-visible-sm{display: initial !important;}
+    .bn-pull-right-sm{
+        float: right !important;
+    }
+    .bn-pull-left-sm{
+        float: left !important;
+    }
+}
+@media (min-width: @breakpoint-md) and (max-width: (@breakpoint-lg - 1px)){
+    .bn-hidden-md{display: none  !important;}
+    .bn-visible-md{display: initial  !important;}
+    .bn-pull-right-md{
+        float: right  !important;
+    }
+    .bn-pull-left-md{
+        float: left  !important;
+    }
+}
+@media (min-width: @breakpoint-lg)  {
+    .bn-hidden-lg{display: none  !important;}
+    .bn-visible-lg{display: initial  !important;}
+    .bn-pull-right-lg{
+        float: right  !important;
+    }
+    .bn-pull-left-lg{
+        float: left  !important;
+    }
+}
+@media (min-width: @breakpoint-xlg) {
+    .bn-hidden-xlg{display: none  !important;  }
+    .bn-visible-xlg{display: initial  !important;}
+    .bn-pull-right-lg{
+        float: right  !important;
+    }
+    .bn-pull-left-lg{
+        float: left  !important;
+    }
+}
+.border-test{
+    border: 1px dotted #4f0;
+}
+
+.pd-y{
+    padding-top:@colPadding !important;
+    padding-bottom: @colPadding !important;
+}
+
+.img-bg{
+    width: 100%;
+    height: 400px;
+    max-height: 100%;
+    max-width:100%;
+    //background-image: url('https://loremflickr.com/400/400');//<img src="https://loremflickr.com/320/240" />
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}

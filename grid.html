@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{padding:0;margin:0; box-sizing: border-box;  }
+        nav > ul{
+            list-style: none;            
+        }
+        nav > ul > li{
+            display: inline-block;
+        }
+        body > *{border: dashed 1px rgba(6,2,2,.6);}
+        article{
+            width: 15vw;
+            height: 15vw;
+            background-color: ghostwhite;
+            margin:1px;
+            /* border: solid #888; */
+        }
+    
+        article{padding: 20px;}
+        article img{width: 100%; height: auto;}
+
+        body > main > section {
+            display: grid;
+            grid-template-areas: "article article article article article article article";
+        }
+    
+        article:nth-child(even){
+            background-color: #888;
+        }
+    
+    
+    </style>
+<script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+        
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+
+    </aside>
+    <main>
+        
+        <section>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="ball.png" draggable="true" ondragstart="drag(event)" id="drag1" >
+            </article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+            <article ondrop="drop(event)" ondragover="allowDrop(event)"></article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

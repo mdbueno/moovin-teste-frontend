@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MOOVIN Teste</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bueno/less/bueno.css">
+    <link rel="stylesheet" href="js/bxslider/jquery.bxslider.css">
+    <link rel="stylesheet" href="js/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/owl/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+
+<body>
+    <header>
+        <!-- menu topo -->
+        <nav class="bn-navbar menu-x" id="top-a">
+            <div class="bn-container">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-user"></i> Entre ou Cadastre-se</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="far fa-building"></i> Empresa</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i> Nossas lojas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-comment"></i> Chat Online
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-phone "></i> 51 3026 3833 | 3502 3833
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-heart"></i> Lista de desejos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-whatsapp"></i> 51 98194 6716
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-list-ol"></i> Meus pedidos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!-- header logo -->
+
+        <div id="top-b">
+            <div class="bn-container">
+                <div class="flex-container">
+                    <div>
+                        <a href="#" id="show-user-menu">
+                            <i class="fas fa-user-circle fa-2x"></i>
+                        </a>
+                        <div id="user-menu-collapsible" style="display: none;">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class="fas fa-user"></i> Minha conta
+                                        <span>!</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fas fa-shopping-cart"></i> Meu carrinho
+                                        <span>3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fas fa-list-ol"></i> Meus pedidos</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fas fa-heart"></i> Lista de desejos</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fas fa-comment"></i> Chat Online</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- logo -->
+                    <div class="">
+                        <a href="#">
+                            <img src="img/logo.png" alt="moovin">
+                        </a>
+                    </div>
+                    <div class="search-container bn-hidden-xs">
+                        <input type="search" placeholder="O que você está procurando?">
+                        <button type="button" class="search-submit sprite-lupa bn-pull-left"></button>
+                    </div>
+                    <div class="">
+                        <a href="#">
+                            <div class="cart">
+                                <a href="#">
+                                    <div>
+                                        <div class="sprite-carrinho a1"></div>
+                                        <div class="a2">Meu Carrinho</div>
+                                        <div class="a3">10 itens | R$ 200,00</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <button id="menu-cat-toogle" class="bn-visible-xs bn-pull-right-xs">
+                                <i class="fas fa-bars fa-2x"></i>
+                            </button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- menu categorias -->
+        <div id="top-c">
+            <div class="bn-container">
+                <nav class="bn-navbar" id="menu-cat-1">
+                    <div class="search-container">
+                        <input type="search" placeholder="Pesquise aqui..." class="">
+                        <button type="button" class="search-submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <a href="" class="item active" data-submenu="submenu-1">
+                        <div>
+                            <img src="img/categorias/surf.png" alt="">
+                            <span>Surf</span>
+                        </div>
+                    </a>
+                    <a href="" class="item" data-submenu="submenu-2">
+                        <div>
+                            <img src="img/categorias/skate.png" alt="">
+                            <span>Skate</span>
+                        </div>
+                    </a>
+                    <a href="" class="item" data-submenu="submenu-3">
+                        <div>
+                            <img src="img/categorias/roupas.png" alt="">
+                            <span>Roupas</span>
+                        </div>
+                    </a>
+                    <a href="" class="item" data-submenu="submenu-4">
+                        <div>
+                            <img src="img/categorias/tenis.png" alt="">
+                            <span>Tênis</span>
+                        </div>
+                    </a>
+                    <a href="" class="item" data-submenu="submenu-5">
+                        <div>
+                            <img src="img/categorias/acessorios.png" alt="">
+                            <span>Acessórios</span>
+                        </div>
+                    </a>
+                    <a href="" class="item" data-submenu="submenu-6">
+                        <div>
+                            <img src="img/categorias/outlet-2.png" alt="">
+                            <span>Outlet</span>
+                        </div>
+                    </a>
+
+                </nav>
+
+                <div class="nav-wrapper">
+
+
+
+                    <div class="submenu">
+                        <div class="submenu-item" id="submenu-1" style="display: none;">
+                            <a href="#" class="submenu-close">
+                                <i class="far fa-window-close"></i>
+                            </a>
+                            <div class="flex-container">
+                                <div class="">
+                                    <p>Categorias</p>
+                                    <ul>
+                                        <li class="active">
+                                            <a href="#">Pranchas</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Tênis</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Alpargatas</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Botas</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Chinelos</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <p>Tamanhos</p>
+                                    <div class="tamanhos">
+                                        <span>P</span>
+                                        <span>M</span>
+                                        <span>G</span>
+                                        <span>35</span>
+                                        <span>36</span>
+                                        <span>37</span>
+                                        <span>38</span>
+                                        <span>39</span>
+                                        <span>40</span>
+                                        <span>41</span>
+                                        <span>42</span>
+                                        <span>43</span>
+                                    </div>
+                                </div>
+                                <div class="pd-y">
+                                    <img src="img/diversos/banner_menu_skate.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .submenu-item -->
+
+                        <div class="submenu-item" id="submenu-2" style="display: none;">
+                            <a href="#" class="submenu-close">
+                                <i class="far fa-window-close"></i>
+                            </a>
+                            <div class="flex-container">
+                                <div class="">
+                                    <p>Categorias</p>
+                                    <ul>
+                                        <li class="active">
+                                            <a href="#">Acessórios</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Shape</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Skate completo</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Roda</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Rolamento</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Truck</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <p>Tamanhos</p>
+                                    <div class="tamanhos">
+                                        <span>P</span>
+                                        <span>M</span>
+                                        <span>G</span>
+                                        <span>35</span>
+                                        <span>36</span>
+                                        <span>37</span>
+                                        <span>38</span>
+                                        <span>39</span>
+                                        <span>40</span>
+                                        <span>41</span>
+                                        <span>42</span>
+                                        <span>43</span>
+                                    </div>
+                                </div>
+                                <div class="pd-y">
+                                    <img src="img/diversos/banner_menu_skate.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .submenu-item -->
+
+                        <div class="submenu-item" id="submenu-3" style="display: none;">
+                            <a href="#" class="submenu-close">
+                                <i class="far fa-window-close"></i>
+                            </a>
+                            <div class="flex-container">
+                                <div class="">
+                                    <p>Categorias</p>
+                                    <ul>
+                                        <li class="">
+                                            <a href="#">Feminino</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Masculino</a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="">Tênis</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Chinelos</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <p>Tamanhos</p>
+                                    <div class="tamanhos">
+                                        <span>P</span>
+                                        <span>M</span>
+                                        <span>G</span>
+                                        <span>35</span>
+                                        <span>36</span>
+                                        <span>37</span>
+                                        <span>38</span>
+                                        <span>39</span>
+                                        <span>40</span>
+                                        <span>41</span>
+                                        <span>42</span>
+                                        <span>43</span>
+                                    </div>
+                                </div>
+                                <div class="pd-y">
+                                    <img src="img/diversos/produto_1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .submenu-item -->
+
+
+                        <div class="submenu-item" id="submenu-4" style="display: none;">
+                            <a href="#" class="submenu-close">
+                                <i class="far fa-window-close"></i>
+                            </a>
+                            <div class="flex-container">
+                                <div class="">
+                                    <p>Calçados</p>
+                                    <ul>
+                                        <li class="">
+                                            <a href="#">Alpargatas</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Botas</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Tênis</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Chinelos</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Alpargatas</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Botas</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Tênis</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Chinelos</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="#">Alpargatas</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Botas</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <p>Tamanhos</p>
+                                    <div class="tamanhos">
+                                        <span>P</span>
+                                        <span>M</span>
+                                        <span>G</span>
+                                        <span>35</span>
+                                        <span>36</span>
+                                        <span>37</span>
+                                        <span>38</span>
+                                        <span>39</span>
+                                        <span>40</span>
+                                        <span>41</span>
+                                        <span>42</span>
+                                        <span>43</span>
+                                    </div>
+                                </div>
+                                <div class="pd-y">
+                                    <img src="img/diversos/banner_menu_tenis.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .submenu-item -->
+
+
+
+                        <div class="submenu-item" id="submenu-5" style="display: none;">
+                            <a href="#" class="submenu-close">
+                                <i class="far fa-window-close"></i>
+                            </a>
+                            <div class="flex-container">
+                                <div class="">
+                                    <p>Categorias</p>
+                                    <ul>
+                                        <li class="">
+                                            <a href="#">Chinelos</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="#">Tênis</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Botas</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">Alpargatas</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <p>Tamanhos</p>
+                                    <div class="tamanhos">
+                                        <span>P</span>
+                                        <span>M</span>
+                                        <span>G</span>
+                                        <span>35</span>
+                                        <span>36</span>
+                                        <span>37</span>
+                                        <span>38</span>
+                                        <span>39</span>
+                                        <span>40</span>
+                                        <span>41</span>
+                                        <span>42</span>
+                                        <span>43</span>
+                                    </div>
+                                </div>
+                                <div class="pd-y">
+                                    <img src="img/diversos/produto_1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .submenu-item -->
+                    </div>
+                    <!-- .submenu -->
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </header>
+    <main>
+
+        <section id="slider">
+            <div class="bn-container">
+                <ul class="slider" style="display: none;">
+                    <li>
+                        <a href="#">
+                            <picture>
+                                <img src="img/banners.png" alt="">
+                            </picture>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/88a.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/f82.jpg" alt="">
+                            <!-- <img src="http://via.placeholder.com/1170x380/000/f82.jpg" alt=""> -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <div class="bn-container">
+                <header>
+                    <h2>Acabou de chegar</h2>
+                </header>
+                <ul>
+                    <li class="active">Surf</li>
+                    <li>Roupas</li>
+                    <li>Tênis</li>
+                    <li>Acessórios</li>
+                </ul>
+                <div id="slider-2" class="owl-carousel owl-theme">
+                    <article class="item">
+                        <a href="#">
+                            <figure>
+                                <img src="img/diversos/produto_1.png" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h3>Long John Rip Curl E-bomb Zip</h3>
+                                        <p>free 3/2MM</p>
+                                        <p>R$ 3.000,00
+                                            <span class="promo">R$1.299,90</span>
+                                        </p>
+                                        <p>6x de 2016,65 ou à vista R$1.234,91</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="item">
+                        <a href="#">
+                            <figure>
+                                <img src="img/diversos/produto_2.png" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h3>Long John Rip Curl </h3>
+                                        <p>free 3/2MM</p>
+                                        <p>R$ 3.000,00
+                                            <span class="promo">R$1.299,90</span>
+                                        </p>
+                                        <p>6x de 2016,65 ou à vista R$1.234,91</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="item">
+                        <a href="#">
+                            <figure>
+                                <img src="img/diversos/produto_3.png" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h3>Long John Rip Curl </h3>
+                                        <p>free 3/2MM</p>
+                                        <p>R$ 3.000,00
+                                            <span class="promo">R$1.299,90</span>
+                                        </p>
+                                        <p>6x de 2016,65 ou à vista R$1.234,91</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="item">
+                        <a href="#">
+                            <figure>
+                                <img src="img/diversos/produto_4.png" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h3>Long John Rip Curl </h3>
+                                        <p>free 3/2MM</p>
+                                        <p>R$ 3.000,00
+                                            <span class="promo">R$1.299,90</span>
+                                        </p>
+                                        <p>6x de 2016,65 ou à vista R$1.234,91</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="item">
+                        <a href="#">
+                            <figure>
+                                <img src="http://via.placeholder.com/270/000/f82.jpg" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h3>Long John Rip Curl </h3>
+                                        <p>free 3/2MM</p>
+                                        <p>R$ 3.000,00
+                                            <span class="promo">R$1.299,90</span>
+                                        </p>
+                                        <p>6x de 2016,65 ou à vista R$1.234,91</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+
+
+                    <article class="item">
+                        <a href="#">
+                            <figure>
+                                <img src="http://via.placeholder.com/270/000/6f2.jpg" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h3>Long John Rip Curl </h3>
+                                        <p>free 3/2MM</p>
+                                        <p>R$ 3.000,00
+                                            <span class="promo">R$1.299,90</span>
+                                        </p>
+                                        <p>6x de 2016,65 ou à vista R$1.234,91</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+
+                    <article class="item">
+                        <a href="#">
+                            <figure>
+                                <img src="http://via.placeholder.com/270/222/64e.jpg" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h3>Long John Rip Curl </h3>
+                                        <p>free 3/2MM</p>
+                                        <p>R$ 3.000,00
+                                            <span class="promo">R$1.299,90</span>
+                                        </p>
+                                        <p>6x de 2016,65 ou à vista R$1.234,91</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+
+                    <article class="item">
+                        <a href="#">
+                            <figure>
+                                <img src="http://via.placeholder.com/270/500/6f7.jpg" alt="">
+                                <figcaption>
+                                    <div>
+                                        <h3>Long John Rip Curl </h3>
+                                        <p>free 3/2MM</p>
+                                        <p>R$ 3.000,00
+                                            <span class="promo">R$1.299,90</span>
+                                        </p>
+                                        <p>6x de 2016,65 ou à vista R$1.234,91</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+
+
+
+                    <div id="slide-control-left">
+                    </div>
+                    <div id="slide-control-right">
+                    </div>
+                    <!-- http://via.placeholder.com/270/000/de2.jpg -->
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="hide">
+            <div class="bn-container">
+                <div id="flex-container">
+                    <div>
+                        <span>DIV 1</span>
+                    </div>
+                    <div>
+                        <span>DIV 2</span>
+                    </div>
+                    <div class="img-bg">
+                        <span>DIV 3</span>
+                    </div>
+                    <!-- <div>DIV 4</div>
+                    <div>DIV 5</div>
+                    <div>DIV 6</div>
+                    <div>DIV 7</div> -->
+                </div>
+            </div>
+        </section>
+        <section>
+
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="bn-container">
+            <div>
+                <div>
+                    <div>
+                        <h4>Contato</h4>
+                        <ul>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>51 3026 3833</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>contato@moovin.com.br</span>
+                            </li>
+                            <li>
+                                <i class="fab fa-whatsapp"></i>
+                                <span>51 98194 6716</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h4>Pague com</h4>
+                        <img src="img/cartoes.png" alt="cartoes">
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <p>&copy; 2018
+                    <b>Moovin</b> Plataforma E-commerce &FilledVerySmallSquare; Todos os direitos reservados..</p>
+            </div>
+
+        </div>
+        <!-- container -->
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bxslider/jquery.bxslider.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

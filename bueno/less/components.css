@@ -1,0 +1,11 @@
+.bn-navbar ul {
+  list-style: none;
+  padding: 0;
+}
+.bn-navbar ul li a {
+  padding: 15px;
+  text-decoration: none;
+}
+.bn-navbar.menu-x ul li {
+  display: inline-block;
+}

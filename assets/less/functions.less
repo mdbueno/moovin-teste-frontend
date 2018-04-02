@@ -1,0 +1,74 @@
+.transitionAll(@timeTransition : @transitionTimeDefault){ 
+    -ms-transition: all     @timeTransition;
+    -o-transition: all      @timeTransition;
+    -moz-transition: all    @timeTransition;
+    -webkit-transition: all @timeTransition;
+    transition: all         @timeTransition;
+}
+.bnTransitionAll(@timeTransition : @transitionTimeDefault){ 
+    -ms-transition: all     @timeTransition;
+    -o-transition: all      @timeTransition;
+    -moz-transition: all    @timeTransition;
+    -webkit-transition: all @timeTransition;
+    transition: all         @timeTransition;
+}
+
+.bnTransition(@transitionAndTime){
+    -ms-transition:     @transitionAndTime;
+    -o-transition:      @transitionAndTime;
+    -moz-transition:    @transitionAndTime;
+    -webkit-transition: @transitionAndTime;
+    transition:         @transitionAndTime;
+}
+
+.bnRotate(@deg : 180deg){
+    -moz-transform: rotateZ(@deg);
+    -ms-transform: rotateZ(@deg);
+    -o-transform: rotateZ(@deg);
+    -webkit-transform: rotateZ(@deg);
+    transform: rotateZ( @deg);
+}
+
+.bnRotateX(@deg : 180deg){
+    -moz-transform: rotateX(@deg);
+    -ms-transform: rotateX(@deg);
+    -o-transform: rotateX(@deg);
+    -webkit-transform: rotateX(@deg);
+    transform: rotateX( @deg);
+}
+
+.bnRotateY(@deg : 180deg){
+    -moz-transform: rotateY(@deg);
+    -ms-transform: rotateY(@deg);
+    -o-transform: rotateY(@deg);
+    -webkit-transform: rotateY(@deg);
+    transform: rotateY( @deg);
+}
+
+.bnRotate3d(@x, @y, @z, @deg){
+    -moz-transform: rotate3d(@x, @y, @z, @deg);
+    -ms-transform: rotate3d(@x, @y, @z, @deg);
+    -o-transform: rotate3d(@x, @y, @z, @deg);
+    -webkit-transform: rotate3d(@x, @y, @z, @deg);
+    transform: rotate3d( @x, @y, @z, @deg);
+}
+
+
+.bnTransform(@functionTransform){
+    -moz-transform:     @functionTransform;
+    -ms-transform:      @functionTransform;
+    -o-transform:       @functionTransform;
+    -webkit-transform:  @functionTransform;
+    transform:          @functionTransform;
+}
+.bnFilter(@functionFilter){
+    -moz-filter:     @functionFilter;
+    -ms-filter:      @functionFilter;
+    -o-filter:       @functionFilter;
+    -webkit-filter:  @functionFilter;
+    filter:       @functionFilter;
+}
+.bnPaddingX(@paddingVal){
+    padding-right: @paddingVal; 
+    padding-left: @paddingVal; 
+}
